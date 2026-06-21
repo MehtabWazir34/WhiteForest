@@ -1,0 +1,1 @@
+﻿import { createContext, useState } from "react";\nexport const ToastContext = createContext();\nexport function ToastProvider({ children }) { const [toast, setToast] = useState(null); return <ToastContext.Provider value={{ toast, setToast }}>{children}</ToastContext.Provider>; }

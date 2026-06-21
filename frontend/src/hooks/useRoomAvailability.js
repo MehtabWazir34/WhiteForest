@@ -1,0 +1,1 @@
+﻿import { useState, useEffect } from "react";\nexport default function useRoomAvailability(roomId) { const [availability, setAvailability] = useState(null); useEffect(() => { if (!roomId) return; }, [roomId]); return availability; }

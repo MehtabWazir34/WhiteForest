@@ -1,0 +1,1 @@
+﻿import { createContext, useState } from "react";\nexport const GuestSessionContext = createContext();\nexport function GuestSessionProvider({ children }) { const [session, setSession] = useState(null); return <GuestSessionContext.Provider value={{ session, setSession }}>{children}</GuestSessionContext.Provider>; }

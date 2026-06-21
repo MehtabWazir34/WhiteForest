@@ -1,0 +1,1 @@
+﻿import { createContext, useState } from "react";\nexport const LanguageContext = createContext();\nexport function LanguageProvider({ children }) { const [language, setLanguage] = useState("en"); return <LanguageContext.Provider value={{ language, setLanguage }}>{children}</LanguageContext.Provider>; }
